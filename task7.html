@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map Explorer</title>
+</head>
+<body>
+
+    <h1>World Map Explorer</h1>
+    <p>Click on a country to explore more information.</p>
+
+    <img src="https://www.mapsofindia.com/world-map/world-political-map-2020.jpg">
+         usemap="#worldmap" width="800" height="400">
+
+    <map name="worldmap">
+
+        <!-- India: Circle -->
+        <area shape="circle"
+              coords="500,220,40"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="India"
+              target="_blank">
+
+        <!-- USA: Rectangle -->
+        <area shape="rect"
+              coords="100,100,250,200"
+              href="https://en.wikipedia.org/wiki/United_States"
+              alt="United States"
+              target="_blank">
+
+        <!-- Australia: Polygon -->
+        <area shape="poly"
+              coords="620,280,680,260,730,300,690,340,640,330"
+              href="https://en.wikipedia.org/wiki/Australia"
+              alt="Australia"
+              target="_blank">
+
+        <!-- Default Area -->
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/World"
+              alt="World"
+              target="_blank">
+
+    </map>
+
+</body>
+</html>
